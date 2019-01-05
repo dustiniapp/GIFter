@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('Stage 1') {
       steps {
-        echo 'Code has been pulled'
+        sh '''cd /home/ahoydeploy/deploy_area/gifter
+gulp build:js'''
       }
     }
     stage(' End') {
