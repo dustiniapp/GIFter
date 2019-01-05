@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Stage 1') {
       steps {
-        sh 'cd /home'
+        sh 'cd /home/ahoydeploy'
       }
     }
     stage(' End') {
