@@ -1,5 +1,5 @@
 # GIFter
-test
+test 2
 The GIF-to-Chatter app for Lightning Platform you didn't know you needed!
 
 ![image](https://user-images.githubusercontent.com/746259/36634388-9d7b0b9e-1958-11e8-83df-dfc65ace47b3.png)
