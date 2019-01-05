@@ -2,31 +2,17 @@ pipeline {
   agent any
   stages {
     stage('Stage 1') {
-      parallel {
-        stage('Stage 1') {
-          steps {
-            echo 'Code has been pulled'
-          }
-        }
-        stage('test a') {
-          steps {
-            echo 'test a'
-          }
-        }
+      steps {
+        echo 'Code has been pulled'
       }
     }
-    stage('stage 2') {
-      parallel {
-        stage('stage 2') {
-          steps {
-            echo 'test 2'
-          }
+    stage(' End') {
+      steps {
+        pwd()
+        waitUntil() {
+          echo 'ok'
         }
-        stage('test b') {
-          steps {
-            echo 'test b'
-          }
-        }
+
       }
     }
   }
