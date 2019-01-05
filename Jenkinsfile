@@ -9,10 +9,6 @@ pipeline {
     stage(' End') {
       steps {
         pwd()
-        waitUntil() {
-          echo 'ok'
-        }
-
       }
     }
   }
